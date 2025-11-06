@@ -1,0 +1,91 @@
+import Image from 'next/image';
+
+export default function SharperHumanLongerSection() {
+  return (
+    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+      <div className="max-w-[1400px] mx-auto">
+        {/* Two column layout - Content on LEFT, Image on RIGHT */}
+        <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-20 items-center">
+          {/* LEFT column - Header and Content */}
+          <div className="flex-1">
+            <h2
+              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-6"
+              style={{
+                fontWeight: 100,
+                letterSpacing: '-0.02em',
+                color: '#fff'
+              }}
+            >
+              Brain Nutrition - "A Sharper Human, for Longer"
+            </h2>
+
+            <p
+              className="text-[clamp(1.1rem,2vw,1.3rem)] mb-8"
+              style={{
+                color: '#fff',
+                fontWeight: 200,
+                letterSpacing: '0.01em',
+                lineHeight: 1.4,
+                fontStyle: 'italic'
+              }}
+            >
+              The Best Version Of Yourself, For as Long As Possible.
+            </p>
+
+            <div className="space-y-6">
+              <p
+                className="text-[clamp(1rem,2vw,1.15rem)]"
+                style={{
+                  color: '#fff',
+                  fontWeight: 300,
+                  letterSpacing: '0.01em',
+                  lineHeight: 1.7
+                }}
+              >
+                Our natural nootropic stack contains ingredients that enhance memory, focus, mood, concentration and cognitive function while being neuroprotective and non-synthetic.
+              </p>
+
+              <p
+                className="text-[clamp(1rem,2vw,1.15rem)]"
+                style={{
+                  color: '#fff',
+                  fontWeight: 300,
+                  letterSpacing: '0.01em',
+                  lineHeight: 1.7
+                }}
+              >
+                This stack is designed for individuals looking to grow, learn, and become the best versions of themselves without relying on medications or synthetic drugs.
+              </p>
+
+              {/* Core Philosophy Callout */}
+              <div className="mt-10 pt-6 border-t border-[#333]">
+                <p
+                  className="text-[clamp(1.1rem,2.2vw,1.4rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.5
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>Core Philosophy:</span> Make your brain - and hence YOU - better. Everything flows from enhanced cognitive capacity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT column - Image */}
+          <div className="flex-1 flex items-center justify-center">
+            <Image
+              src="/images/Vessel for Sharper Human with engraving 2 (1).png"
+              alt="Sharper Human Vessel"
+              width={600}
+              height={600}
+              className="w-full h-auto object-contain rounded-md"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
