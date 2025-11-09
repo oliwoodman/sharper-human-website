@@ -97,7 +97,7 @@ export default function ReviewsSection() {
                   lineHeight: 1.6
                 }}
               >
-                "{review.quote}"
+                &ldquo;{review.quote}&rdquo;
               </p>
             </div>
           ))}

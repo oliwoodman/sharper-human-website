@@ -287,7 +287,7 @@ export default function IngredientsSection() {
                 fontStyle: 'italic'
               }}
             >
-              "20 Research-Backed, Focus Enhancing Ingredients."
+              &ldquo;20 Research-Backed, Focus Enhancing Ingredients.&rdquo;
             </h3>
 
             {/* What Makes Our Stack Different */}
@@ -311,7 +311,7 @@ export default function IngredientsSection() {
                   lineHeight: 1.7
                 }}
               >
-                As important as what's <span style={{ fontWeight: 600 }}>IN</span> the Sharper Human stack is what we <span style={{ fontWeight: 600 }}>REMOVED</span>. During our research process, we eliminated dozens of ingredients originally marketed as effective nootropics that, research shows limited real world, long term positive benefits.
+                As important as what&apos;s <span style={{ fontWeight: 600 }}>IN</span> the Sharper Human stack is what we <span style={{ fontWeight: 600 }}>REMOVED</span>. During our research process, we eliminated dozens of ingredients originally marketed as effective nootropics that, research shows limited real world, long term positive benefits.
               </p>
             </div>
 
@@ -340,7 +340,7 @@ export default function IngredientsSection() {
                   lineHeight: 1.7
                 }}
               >
-                This ingredient stack was formulated to stack each compound's benefits on top of the others, creating a synergistic effect that's greater than the sum of its parts.
+                This ingredient stack was formulated to stack each compound&apos;s benefits on top of the others, creating a synergistic effect that&apos;s greater than the sum of its parts.
               </p>
               <p
                 className="text-[clamp(0.95rem,2vw,1.05rem)]"

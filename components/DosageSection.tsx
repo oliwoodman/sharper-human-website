@@ -37,7 +37,7 @@ export default function DosageSection() {
                   lineHeight: 1.7
                 }}
               >
-                <span style={{ fontWeight: 600 }}>Clinical trials use higher dosages because timeframes are shorter.</span> We're building focus for decades, not just days or weeks. Each ingredient is dosed at the <span style={{ fontWeight: 600 }}>minimum effective level</span> to avoid the pitfalls of long-term overdosing while ensuring therapeutic benefit.
+                <span style={{ fontWeight: 600 }}>Clinical trials use higher dosages because timeframes are shorter.</span> We&apos;re building focus for decades, not just days or weeks. Each ingredient is dosed at the <span style={{ fontWeight: 600 }}>minimum effective level</span> to avoid the pitfalls of long-term overdosing while ensuring therapeutic benefit.
               </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function DosageSection() {
                   lineHeight: 1.7
                 }}
               >
-                Most brands either under-dose ingredients below the Minimum Effective Dose making benefits negligible (usually to save cost) or over-dose for short-term "feel-good" effects of easily "feel-able" nootropics that aren't sustainable (such as caffeine).
+                Most brands either under-dose ingredients below the Minimum Effective Dose making benefits negligible (usually to save cost) or over-dose for short-term &ldquo;feel-good&rdquo; effects of easily &ldquo;feel-able&rdquo; nootropics that aren&apos;t sustainable (such as caffeine).
               </p>
             </div>
 

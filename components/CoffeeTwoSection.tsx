@@ -15,11 +15,11 @@ export default function CoffeeTwoSection() {
                 fontStyle: 'italic'
               }}
             >
-              "We built this for founders
+              &ldquo;We built this for founders
               <br />
               looking to dominate without
               <br />
-              dependence on caffeine."
+              dependence on caffeine.&rdquo;
             </blockquote>
           </div>
 
@@ -33,7 +33,7 @@ export default function CoffeeTwoSection() {
                 color: '#fff'
               }}
             >
-              This is Coffee 2.0 - "Why No Caffeine?"
+              This is Coffee 2.0 - &ldquo;Why No Caffeine?&rdquo;
             </h2>
 
             <div className="space-y-6">
@@ -46,7 +46,7 @@ export default function CoffeeTwoSection() {
                 lineHeight: 1.7
               }}
             >
-              Caffeine is a legitimately effective nootropic. But it's also an <span style={{ fontWeight: 600 }}>accelerator</span> - potent but many react very differently to it. It's also a short term solution to a long term problem.
+              Caffeine is a legitimately effective nootropic. But it&apos;s also an <span style={{ fontWeight: 600 }}>accelerator</span> - potent but many react very differently to it. It&apos;s also a short term solution to a long term problem.
             </p>
 
             <p
@@ -58,7 +58,7 @@ export default function CoffeeTwoSection() {
                 lineHeight: 1.7
               }}
             >
-              <span style={{ fontWeight: 600 }}>Zero caffeine or synthetic stimulants.</span> We believe adding caffeine to a brain supplement stack is simply cheating the customer into "feeling" the product work, rather than developing ingredients that create genuine, lasting cognitive enhancement.
+              <span style={{ fontWeight: 600 }}>Zero caffeine or synthetic stimulants.</span> We believe adding caffeine to a brain supplement stack is simply cheating the customer into &ldquo;feeling&rdquo; the product work, rather than developing ingredients that create genuine, lasting cognitive enhancement.
             </p>
 
             <p

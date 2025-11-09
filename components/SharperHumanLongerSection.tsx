@@ -16,7 +16,7 @@ export default function SharperHumanLongerSection() {
                 color: '#fff'
               }}
             >
-              Brain Nutrition - "A Sharper Human, for Longer"
+              Brain Nutrition - &ldquo;A Sharper Human, for Longer&rdquo;
             </h2>
 
             <p

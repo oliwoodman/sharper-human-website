@@ -14,7 +14,7 @@ export default function WhosThisForSection() {
                 color: '#fff'
               }}
             >
-              Who's This For? - "Brain Performance & Longevity" Focus for Decades not Minutes
+              Who&apos;s This For? - &ldquo;Brain Performance & Longevity&rdquo; Focus for Decades not Minutes
             </h2>
 
             <div className="space-y-6">
@@ -50,7 +50,7 @@ export default function WhosThisForSection() {
                     lineHeight: 1.7
                   }}
                 >
-                  "I built this product for myself and my dad. I've been an entrepreneur for 15 years and demand peak performance and focus. But for my dad, I wanted something that would give him a healthier brain for longer, improve his memory, and help offset the cognitive decline that was starting to appear. That's why Sharper Human has focused on both immediate performance AND longevity from day one - to stay sharp and keep the ones you love sharp around you too."
+                  &ldquo;I built this product for myself and my dad. I&apos;ve been an entrepreneur for 15 years and demand peak performance and focus. But for my dad, I wanted something that would give him a healthier brain for longer, improve his memory, and help offset the cognitive decline that was starting to appear. That&apos;s why Sharper Human has focused on both immediate performance AND longevity from day one - to stay sharp and keep the ones you love sharp around you too.&rdquo;
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function WhosThisForSection() {
                   lineHeight: 1.7
                 }}
               >
-                As a result, 5% of profits go to brain health related charities supporting Alzheimer's, Parkinson's, and brain health research.
+                As a result, 5% of profits go to brain health related charities supporting Alzheimer&apos;s, Parkinson&apos;s, and brain health research.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export default function WhosThisForSection() {
                 lineHeight: 1.7
               }}
             >
-              If your brain works optimally and you feel sharper, making better decisions throughout the day becomes effortless - whether that's choosing the right business strategy or maintaining the discipline to hit the gym. These benefits stack up exponentially, accelerating your progress as a human.
+              If your brain works optimally and you feel sharper, making better decisions throughout the day becomes effortless - whether that&apos;s choosing the right business strategy or maintaining the discipline to hit the gym. These benefits stack up exponentially, accelerating your progress as a human.
             </p>
 
             <div>
