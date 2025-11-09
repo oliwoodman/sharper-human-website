@@ -60,14 +60,18 @@ export default function FAQSection() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const midPoint = Math.ceil(faqs.length / 2);
+  const leftFaqs = faqs.slice(0, midPoint);
+  const rightFaqs = faqs.slice(midPoint);
+
   return (
     <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Two column layout - FAQs on LEFT, Title on RIGHT */}
+        {/* Two column layout - Half FAQs on LEFT, Title + Half FAQs on RIGHT */}
         <div className="flex flex-col md:flex-row gap-16 md:gap-20">
-          {/* LEFT column - Expandable FAQs */}
-          <div className="flex-1 space-y-4">
-            {faqs.map((faq, index) => (
+          {/* LEFT column - First half of FAQs */}
+          <div className="flex-1 space-y-4" style={{ marginTop: 'calc(clamp(2rem, 5vw, 3.5rem) * 1.1 + 2rem)' }}>
+            {leftFaqs.map((faq, index) => (
               <div
                 key={index}
                 className="border-b"
@@ -100,33 +104,29 @@ export default function FAQSection() {
                   </span>
                 </button>
 
-                <div
-                  style={{
-                    maxHeight: openIndex === index ? '500px' : '0',
-                    overflow: 'hidden',
-                    transition: 'max-height 0.3s ease'
-                  }}
-                >
-                  <p
-                    className="text-[clamp(0.95rem,1.8vw,1.05rem)] pb-6"
-                    style={{
-                      color: '#ccc',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.6
-                    }}
-                  >
-                    {faq.answer}
-                  </p>
-                </div>
+                {openIndex === index && (
+                  <div className="pb-6">
+                    <p
+                      className="text-[clamp(0.95rem,1.8vw,1.05rem)] animate-fade-in-up"
+                      style={{
+                        color: '#fff',
+                        fontWeight: 300,
+                        letterSpacing: '0.01em',
+                        lineHeight: 1.6
+                      }}
+                    >
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
 
-          {/* RIGHT column - Header */}
+          {/* RIGHT column - Header + Second half of FAQs */}
           <div className="flex-1">
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1]"
+              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
               style={{
                 fontWeight: 100,
                 letterSpacing: '-0.02em',
@@ -135,6 +135,62 @@ export default function FAQSection() {
             >
               Frequently Asked Questions
             </h2>
+
+            <div className="space-y-4">
+              {rightFaqs.map((faq, index) => {
+                const actualIndex = midPoint + index;
+                return (
+                  <div
+                    key={actualIndex}
+                    className="border-b"
+                    style={{ borderColor: '#1a1a1a' }}
+                  >
+                    <button
+                      onClick={() => toggleFAQ(actualIndex)}
+                      className="w-full py-6 flex justify-between items-center text-left"
+                      style={{ outline: 'none' }}
+                    >
+                      <h3
+                        className="text-[clamp(1rem,2vw,1.2rem)] pr-4"
+                        style={{
+                          fontWeight: 400,
+                          letterSpacing: '0.01em',
+                          color: '#fff'
+                        }}
+                      >
+                        {faq.question}
+                      </h3>
+                      <span
+                        className="text-[1.5rem] flex-shrink-0"
+                        style={{
+                          color: '#666',
+                          transition: 'transform 0.3s ease',
+                          transform: openIndex === actualIndex ? 'rotate(45deg)' : 'rotate(0deg)'
+                        }}
+                      >
+                        +
+                      </span>
+                    </button>
+
+                    {openIndex === actualIndex && (
+                      <div className="pb-6">
+                        <p
+                          className="text-[clamp(0.95rem,1.8vw,1.05rem)] animate-fade-in-up"
+                          style={{
+                            color: '#fff',
+                            fontWeight: 300,
+                            letterSpacing: '0.01em',
+                            lineHeight: 1.6
+                          }}
+                        >
+                          {faq.answer}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

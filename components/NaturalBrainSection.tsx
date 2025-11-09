@@ -2,24 +2,54 @@ export default function NaturalBrainSection() {
   return (
     <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Two column layout */}
-        <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-20">
-          {/* Left column - Header and Description */}
-          <div className="flex-1">
+        {/* Two column layout - Brain image on left, white box on right */}
+        <div className="flex flex-col md:flex-row items-stretch">
+          {/* Left column - Brain image with white outline and rounded left corners */}
+          <div className="flex-[0.7] flex items-center justify-center">
+            <div
+              className="relative w-full h-full overflow-hidden"
+              style={{
+                borderTop: '2px solid #fff',
+                borderBottom: '2px solid #fff',
+                borderLeft: '2px solid #fff',
+                borderTopLeftRadius: '1rem',
+                borderBottomLeftRadius: '1rem'
+              }}
+            >
+              <img
+                src="/images/brain visual.png"
+                alt="Brain Visual"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Right column - White box with all content and rounded right corners */}
+          <div
+            className="flex-1 p-8 md:p-10 lg:p-12"
+            style={{
+              backgroundColor: '#fff',
+              borderTopRightRadius: '1rem',
+              borderBottomRightRadius: '1rem'
+            }}
+          >
+            {/* Header */}
             <h2
               className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
               style={{
                 fontWeight: 100,
                 letterSpacing: '-0.02em',
-                color: '#fff'
+                color: '#1a1a1a'
               }}
             >
-              An All Natural Brain Performance Supplement for Founders & Entrepreneurs
+              An All Natural Brain Performance Supplement for<br />Founders & Entrepreneurs
             </h2>
+
+            {/* Description */}
             <p
-              className="text-[clamp(1rem,2vw,1.15rem)]"
+              className="text-[clamp(1.1rem,2vw,1.3rem)] mb-12"
               style={{
-                color: '#fff',
+                color: '#1a1a1a',
                 fontWeight: 300,
                 letterSpacing: '0.01em',
                 lineHeight: 1.7
@@ -27,58 +57,43 @@ export default function NaturalBrainSection() {
             >
               We built Sharper Human to help business owners improve focus, cognition and clear thinking while simultaneously supporting long-term brain health, <span style={{ fontWeight: 600 }}>WITHOUT</span> the use of caffeine or stimulants.
             </p>
-          </div>
 
-          {/* Right column - Three core drivers */}
-          <div className="flex-1 flex items-center justify-center">
-            <div className="max-w-[500px]">
-              <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-10"
-                style={{
-                  fontWeight: 200,
-                  letterSpacing: '0.05em',
-                  color: '#fff'
-                }}
-              >
-                Our 3 Core Drivers:
-              </h3>
+            {/* Three core drivers */}
+            <h3
+              className="text-[clamp(1.1rem,2vw,1.3rem)] mb-10"
+              style={{
+                fontWeight: 300,
+                letterSpacing: '0.01em',
+                color: '#000'
+              }}
+            >
+              Our 3 Core Drivers:
+            </h3>
 
-              <div className="space-y-8">
+            <div className="space-y-8">
               {/* Driver 1 */}
               <div className="flex gap-6">
                 <span
                   className="text-[2rem] flex-shrink-0"
                   style={{
                     fontWeight: 100,
-                    color: '#666',
+                    color: '#000',
                     lineHeight: 1
                   }}
                 >
                   1.
                 </span>
-                <div>
-                  <h4
-                    className="text-[clamp(1.1rem,2vw,1.25rem)] mb-2"
-                    style={{
-                      fontWeight: 300,
-                      color: '#fff',
-                      letterSpacing: '0.01em'
-                    }}
-                  >
-                    Enhance Cognition
-                  </h4>
-                  <p
-                    className="text-[clamp(0.95rem,2vw,1.05rem)]"
-                    style={{
-                      color: '#999',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.6
-                    }}
-                  >
-                    Think more clearly, become more effective.
-                  </p>
-                </div>
+                <p
+                  className="text-[clamp(1.1rem,2vw,1.25rem)]"
+                  style={{
+                    fontWeight: 300,
+                    color: '#000',
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.6
+                  }}
+                >
+                  Enhance Cognition - <span style={{ color: '#666' }}>Think more clearly, become more effective.</span>
+                </p>
               </div>
 
               {/* Driver 2 */}
@@ -87,35 +102,23 @@ export default function NaturalBrainSection() {
                   className="text-[2rem] flex-shrink-0"
                   style={{
                     fontWeight: 100,
-                    color: '#666',
+                    color: '#000',
                     lineHeight: 1
                   }}
                 >
                   2.
                 </span>
-                <div>
-                  <h4
-                    className="text-[clamp(1.1rem,2vw,1.25rem)] mb-2"
-                    style={{
-                      fontWeight: 300,
-                      color: '#fff',
-                      letterSpacing: '0.01em'
-                    }}
-                  >
-                    Improve Focus & Memory
-                  </h4>
-                  <p
-                    className="text-[clamp(0.95rem,2vw,1.05rem)]"
-                    style={{
-                      color: '#999',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.6
-                    }}
-                  >
-                    Sustain attention and recall with precision
-                  </p>
-                </div>
+                <p
+                  className="text-[clamp(1.1rem,2vw,1.25rem)]"
+                  style={{
+                    fontWeight: 300,
+                    color: '#000',
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.6
+                  }}
+                >
+                  Improve Focus & Memory - <span style={{ color: '#666' }}>Sustain attention and recall with precision</span>
+                </p>
               </div>
 
               {/* Driver 3 */}
@@ -124,37 +127,24 @@ export default function NaturalBrainSection() {
                   className="text-[2rem] flex-shrink-0"
                   style={{
                     fontWeight: 100,
-                    color: '#666',
+                    color: '#000',
                     lineHeight: 1
                   }}
                 >
                   3.
                 </span>
-                <div>
-                  <h4
-                    className="text-[clamp(1.1rem,2vw,1.25rem)] mb-2"
-                    style={{
-                      fontWeight: 300,
-                      color: '#fff',
-                      letterSpacing: '0.01em'
-                    }}
-                  >
-                    Brain Longevity
-                  </h4>
-                  <p
-                    className="text-[clamp(0.95rem,2vw,1.05rem)]"
-                    style={{
-                      color: '#999',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.6
-                    }}
-                  >
-                    Help slow brain degradation and aging
-                  </p>
-                </div>
+                <p
+                  className="text-[clamp(1.1rem,2vw,1.25rem)]"
+                  style={{
+                    fontWeight: 300,
+                    color: '#000',
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.6
+                  }}
+                >
+                  Brain Longevity - <span style={{ color: '#666' }}>Help slow brain degradation and aging</span>
+                </p>
               </div>
-            </div>
             </div>
           </div>
         </div>

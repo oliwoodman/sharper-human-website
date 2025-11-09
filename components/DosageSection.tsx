@@ -1,11 +1,13 @@
+import Image from 'next/image';
+
 export default function DosageSection() {
   return (
     <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Two column layout - Header/Intro on LEFT, Problem/Solution on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
-          {/* LEFT column - Header and intro text */}
-          <div className="flex-1">
+        {/* Two column layout - Text content on LEFT, Image on RIGHT */}
+        <div className="flex flex-col md:flex-row items-stretch gap-0">
+          {/* LEFT column - All text content */}
+          <div className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
             <h2
               className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
               style={{
@@ -16,7 +18,8 @@ export default function DosageSection() {
             >
               Dosage Matters - What Most Get Wrong
             </h2>
-            <div className="space-y-6">
+
+            <div className="space-y-6 mb-10">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
@@ -40,16 +43,13 @@ export default function DosageSection() {
                 <span style={{ fontWeight: 600 }}>Clinical trials use higher dosages because timeframes are shorter.</span> We&apos;re building focus for decades, not just days or weeks. Each ingredient is dosed at the <span style={{ fontWeight: 600 }}>minimum effective level</span> to avoid the pitfalls of long-term overdosing while ensuring therapeutic benefit.
               </p>
             </div>
-          </div>
 
-          {/* RIGHT column - Problem and Solution stacked */}
-          <div className="flex-1 space-y-10">
             {/* The Industry Problem */}
-            <div>
+            <div className="mb-10">
               <h3
                 className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
                 style={{
-                  fontWeight: 200,
+                  fontWeight: 600,
                   letterSpacing: '0.05em',
                   color: '#fff'
                 }}
@@ -74,7 +74,7 @@ export default function DosageSection() {
               <h3
                 className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
                 style={{
-                  fontWeight: 200,
+                  fontWeight: 600,
                   letterSpacing: '0.05em',
                   color: '#fff'
                 }}
@@ -92,6 +92,19 @@ export default function DosageSection() {
               >
                 All dosages are pulled directly from peer-reviewed scientific studies, optimized for both immediate cognitive enhancement and long-term brain health, confirmed by multiple nootropic experts in the industry.
               </p>
+            </div>
+          </div>
+
+          {/* RIGHT column - Dosage label image */}
+          <div className="flex-[0.75] flex items-center justify-center">
+            <div className="relative w-full h-full flex items-center justify-center" style={{ maxWidth: '85%' }}>
+              <Image
+                src="/images/Sharper Human Nutritional Label Dosage.jpeg"
+                alt="Sharper Human Nutritional Label"
+                width={800}
+                height={1200}
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>

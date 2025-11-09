@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Main content - two columns */}
       <div className="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-12 lg:gap-16 max-w-[1400px] mx-auto w-full">
         {/* Left column - Text content */}
-        <div className="hero-content flex-1 text-left max-w-[600px]">
+        <div className="hero-content flex-1 text-left max-w-[600px] md:-mt-8">
           {/* Main headline */}
           <h1
             className="tagline text-[clamp(2.8rem,7vw,5.5rem)] leading-[0.95] mb-8 animate-fade-in-up-delay-200"
@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         {/* Right column - Image */}
-        <div className="flex-1 flex items-center justify-center max-w-[800px] w-full animate-float-in">
+        <div className="flex-1 flex items-center justify-center max-w-[800px] w-full animate-float-in md:pt-16">
           <Image
             src="/images/sups-falling-no-cap.png"
             alt="Sharper Human Falling Supplements"
@@ -62,19 +62,19 @@ export default function Hero() {
 
       {/* Scroll indicator - bottom center */}
       <div
-        className="scroll-indicator absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in-delay-1000"
+        className="scroll-indicator absolute bottom-16 md:bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in-delay-1000"
         style={{
-          color: '#444',
-          fontSize: '0.65rem',
+          color: '#888',
+          fontSize: '0.75rem',
           letterSpacing: '0.3em',
-          fontWeight: 200
+          fontWeight: 300
         }}
       >
         <span className="uppercase">Explore</span>
         <div
           className="scroll-line w-px h-10 animate-scroll-pulse"
           style={{
-            background: 'linear-gradient(to bottom, #444, transparent)'
+            background: 'linear-gradient(to bottom, #888, transparent)'
           }}
         />
       </div>

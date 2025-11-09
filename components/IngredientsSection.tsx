@@ -236,71 +236,73 @@ export default function IngredientsSection() {
               color: '#fff'
             }}
           >
-            20 Research-Backed, Premium Grade Ingredients
+            20 Research-Backed, Focus Enhancing Ingredients
           </h2>
         </div>
 
         {/* Two column layout - Carousels on LEFT, Text on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20 items-center">
+        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
           {/* LEFT column - Two stacked auto-scrolling carousels */}
-          <div className="w-full md:w-[55%] space-y-6 relative mx-auto">
-            {/* Top carousel - scrolls right */}
-            <div
-              ref={topScrollRef}
-              className="relative overflow-x-scroll scrollbar-hide"
-              style={{ willChange: 'scroll-position' }}
-            >
+          <div className="w-full md:w-[55%] relative mx-auto">
+            <div className="space-y-6">
+              {/* Top carousel - scrolls right */}
               <div
-                className="flex gap-6 flex-nowrap"
+                ref={topScrollRef}
+                className="relative overflow-x-scroll scrollbar-hide"
+                style={{ willChange: 'scroll-position' }}
               >
-                {[...topRowIngredients, ...topRowIngredients].map((ingredient, index) => (
-                  <IngredientCard key={`top-${index}`} ingredient={ingredient} row="top" />
-                ))}
+                <div
+                  className="flex gap-6 flex-nowrap"
+                >
+                  {[...topRowIngredients, ...topRowIngredients].map((ingredient, index) => (
+                    <IngredientCard key={`top-${index}`} ingredient={ingredient} row="top" />
+                  ))}
+                </div>
+              </div>
+
+              {/* Bottom carousel - scrolls left */}
+              <div
+                ref={bottomScrollRef}
+                className="relative overflow-x-scroll scrollbar-hide"
+                style={{ willChange: 'scroll-position' }}
+              >
+                <div
+                  className="flex gap-6 flex-nowrap"
+                >
+                  {[...bottomRowIngredients, ...bottomRowIngredients].map((ingredient, index) => (
+                    <IngredientCard key={`bottom-${index}`} ingredient={ingredient} row="bottom" />
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Bottom carousel - scrolls left */}
-            <div
-              ref={bottomScrollRef}
-              className="relative overflow-x-scroll scrollbar-hide"
-              style={{ willChange: 'scroll-position' }}
+            {/* Small text under carousels */}
+            <p
+              className="text-[clamp(0.85rem,1.5vw,0.95rem)] text-center mt-6"
+              style={{
+                color: '#999',
+                fontWeight: 300,
+                letterSpacing: '0.01em',
+                lineHeight: 1.6
+              }}
             >
-              <div
-                className="flex gap-6 flex-nowrap"
-              >
-                {[...bottomRowIngredients, ...bottomRowIngredients].map((ingredient, index) => (
-                  <IngredientCard key={`bottom-${index}`} ingredient={ingredient} row="bottom" />
-                ))}
-              </div>
-            </div>
+              Full ingredient profiles, dosage information and links to scientific evidence are available on our individual detailed product research pages.
+            </p>
           </div>
 
           {/* RIGHT column - Text content stacked */}
-          <div className="flex-1 space-y-10">
-            {/* Quote */}
-            <h3
-              className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
-              style={{
-                fontWeight: 200,
-                letterSpacing: '0.05em',
-                color: '#fff',
-                fontStyle: 'italic'
-              }}
-            >
-              &ldquo;20 Research-Backed, Focus Enhancing Ingredients.&rdquo;
-            </h3>
-
+          <div className="flex-1 flex flex-col justify-center space-y-8" style={{ marginTop: '-5.5rem' }}>
             {/* What Makes Our Stack Different */}
             <div>
               <h3
                 className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
                 style={{
-                  fontWeight: 200,
+                  fontWeight: 600,
                   letterSpacing: '0.05em',
                   color: '#fff'
                 }}
               >
-                What Makes Our Stack Different:
+                What Makes Our Stack Different?
               </h3>
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
@@ -320,17 +322,13 @@ export default function IngredientsSection() {
               <h3
                 className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
                 style={{
-                  fontWeight: 200,
+                  fontWeight: 600,
                   letterSpacing: '0.05em',
                   color: '#fff'
                 }}
               >
                 Our Premium Ingredient Stack:
               </h3>
-            </div>
-
-            {/* Closing paragraphs */}
-            <div className="space-y-6">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
@@ -341,17 +339,6 @@ export default function IngredientsSection() {
                 }}
               >
                 This ingredient stack was formulated to stack each compound&apos;s benefits on top of the others, creating a synergistic effect that&apos;s greater than the sum of its parts.
-              </p>
-              <p
-                className="text-[clamp(0.95rem,2vw,1.05rem)]"
-                style={{
-                  color: '#999',
-                  fontWeight: 300,
-                  letterSpacing: '0.01em',
-                  lineHeight: 1.6
-                }}
-              >
-                Full ingredient profiles, dosage information and links to scientific evidence are available on our individual detailed product research pages.
               </p>
             </div>
           </div>

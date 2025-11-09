@@ -2,29 +2,19 @@ export default function CoffeeTwoSection() {
   return (
     <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Two column layout - Header/Quote on LEFT, Content on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
-          {/* LEFT column - Closing quote */}
-          <div className="flex-1 flex flex-col justify-center items-center">
-            <blockquote
-              className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] max-w-[500px]"
-              style={{
-                fontWeight: 200,
-                letterSpacing: '-0.01em',
-                color: '#fff',
-                fontStyle: 'italic'
-              }}
-            >
-              &ldquo;We built this for founders
-              <br />
-              looking to dominate without
-              <br />
-              dependence on caffeine.&rdquo;
-            </blockquote>
-          </div>
-
-          {/* RIGHT column - Header and main content */}
-          <div className="flex-1">
+        {/* Two column layout - Content on LEFT, Quote card on RIGHT */}
+        <div className="flex flex-col md:flex-row items-stretch gap-0">
+          {/* LEFT column - Header and main content with white border */}
+          <div
+            className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center"
+            style={{
+              borderTop: '2px solid #fff',
+              borderBottom: '2px solid #fff',
+              borderLeft: '2px solid #fff',
+              borderTopLeftRadius: '1rem',
+              borderBottomLeftRadius: '1rem'
+            }}
+          >
             <h2
               className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
               style={{
@@ -73,7 +63,36 @@ export default function CoffeeTwoSection() {
               This caffeine-free approach allows you to take Sharper Human <span style={{ fontWeight: 600 }}>with or without your daily coffee or caffeine consumption</span>, depending on your preferences and individual caffeine tolerance.
             </p>
           </div>
-        </div>
+          </div>
+
+          {/* RIGHT column - Quote card with white background - full height */}
+          <div
+            className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center items-center"
+            style={{
+              backgroundColor: '#f5f5f5',
+              borderTopRightRadius: '1rem',
+              borderBottomRightRadius: '1rem',
+              borderTop: '2px solid #fff',
+              borderRight: '2px solid #fff',
+              borderBottom: '2px solid #fff'
+            }}
+          >
+            <blockquote
+              className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] text-center"
+              style={{
+                fontWeight: 200,
+                letterSpacing: '-0.01em',
+                color: '#1a1a1a',
+                fontStyle: 'italic'
+              }}
+            >
+              &ldquo;We built this for founders
+              <br />
+              looking to dominate without
+              <br />
+              dependence on caffeine.&rdquo;
+            </blockquote>
+          </div>
       </div>
       </div>
     </section>

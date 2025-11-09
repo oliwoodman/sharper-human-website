@@ -47,7 +47,7 @@ export default function ReviewsSection() {
               fontStyle: 'italic'
             }}
           >
-            Real User Feedback:
+            Real User Feedback
           </h3>
         </div>
 

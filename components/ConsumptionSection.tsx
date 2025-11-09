@@ -5,20 +5,40 @@ export default function ConsumptionSection() {
     <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Image on LEFT, Content on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-20 items-center">
-          {/* LEFT column - Image */}
+        <div className="flex flex-col md:flex-row items-stretch gap-0">
+          {/* LEFT column - Image with border around image edge */}
           <div className="flex-1 flex items-center justify-center">
-            <Image
-              src="/images/singular pill.png"
-              alt="Sharper Human Pill"
-              width={600}
-              height={600}
-              className="w-full h-auto object-contain rounded-md"
-            />
+            <div
+              className="relative w-full h-full overflow-hidden"
+              style={{
+                borderTop: '2px solid #fff',
+                borderBottom: '2px solid #fff',
+                borderLeft: '2px solid #fff',
+                borderTopLeftRadius: '1rem',
+                borderBottomLeftRadius: '1rem'
+              }}
+            >
+              <Image
+                src="/images/singular pill.png"
+                alt="Sharper Human Pill"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
 
-          {/* RIGHT column - Header and Content centered */}
-          <div className="flex-1 flex flex-col justify-center">
+          {/* RIGHT column - Header and Content */}
+          <div
+            className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center"
+            style={{
+              borderTop: '2px solid #fff',
+              borderBottom: '2px solid #fff',
+              borderRight: '2px solid #fff',
+              borderTopRightRadius: '1rem',
+              borderBottomRightRadius: '1rem'
+            }}
+          >
             <h2
               className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
               style={{
