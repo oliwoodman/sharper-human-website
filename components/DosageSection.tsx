@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function DosageSection() {
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Text content on LEFT, Image on RIGHT */}
         <div className="flex flex-col md:flex-row items-stretch gap-0">

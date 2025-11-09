@@ -1,19 +1,12 @@
 export default function CoffeeTwoSection() {
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Content on LEFT, Quote card on RIGHT */}
-        <div className="flex flex-col md:flex-row items-stretch gap-0">
+        <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-0">
           {/* LEFT column - Header and main content with white border */}
           <div
-            className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center"
-            style={{
-              borderTop: '2px solid #fff',
-              borderBottom: '2px solid #fff',
-              borderLeft: '2px solid #fff',
-              borderTopLeftRadius: '1rem',
-              borderBottomLeftRadius: '1rem'
-            }}
+            className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
           >
             <h2
               className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
@@ -67,14 +60,9 @@ export default function CoffeeTwoSection() {
 
           {/* RIGHT column - Quote card with white background - full height */}
           <div
-            className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center items-center"
+            className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center items-center rounded-2xl md:rounded-l-none"
             style={{
-              backgroundColor: '#f5f5f5',
-              borderTopRightRadius: '1rem',
-              borderBottomRightRadius: '1rem',
-              borderTop: '2px solid #fff',
-              borderRight: '2px solid #fff',
-              borderBottom: '2px solid #fff'
+              backgroundColor: '#f5f5f5'
             }}
           >
             <blockquote

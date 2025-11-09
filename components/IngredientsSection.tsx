@@ -224,10 +224,10 @@ export default function IngredientsSection() {
   };
 
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Header - centered */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2
             className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1]"
             style={{
@@ -241,7 +241,7 @@ export default function IngredientsSection() {
         </div>
 
         {/* Two column layout - Carousels on LEFT, Text on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           {/* LEFT column - Two stacked auto-scrolling carousels */}
           <div className="w-full md:w-[55%] relative mx-auto">
             <div className="space-y-6">
@@ -291,7 +291,7 @@ export default function IngredientsSection() {
           </div>
 
           {/* RIGHT column - Text content stacked */}
-          <div className="flex-1 flex flex-col justify-center space-y-8" style={{ marginTop: '-5.5rem' }}>
+          <div className="flex-1 flex flex-col justify-center space-y-6 md:space-y-8 md:-mt-[5.5rem]">
             {/* What Makes Our Stack Different */}
             <div>
               <h3

@@ -65,12 +65,12 @@ export default function FAQSection() {
   const rightFaqs = faqs.slice(midPoint);
 
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Half FAQs on LEFT, Title + Half FAQs on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           {/* LEFT column - First half of FAQs */}
-          <div className="flex-1 space-y-4" style={{ marginTop: 'calc(clamp(2rem, 5vw, 3.5rem) * 1.1 + 2rem)' }}>
+          <div className="flex-1 space-y-4 md:mt-[calc(clamp(2rem,5vw,3.5rem)*1.1+2rem)]">
             {leftFaqs.map((faq, index) => (
               <div
                 key={index}

@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="hero relative flex flex-col px-8 md:px-12 lg:px-16 pt-20 pb-12" style={{ backgroundColor: '#010101' }}>
+    <div className="hero relative flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 pt-20 pb-12" style={{ backgroundColor: '#010101' }}>
       {/* Main content - two columns */}
-      <div className="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-12 lg:gap-16 max-w-[1400px] mx-auto w-full">
+      <div className="flex flex-col md:flex-row items-center justify-start gap-6 sm:gap-8 md:gap-12 lg:gap-16 max-w-[1400px] mx-auto w-full">
         {/* Left column - Text content */}
         <div className="hero-content flex-1 text-left max-w-[600px] md:-mt-8">
           {/* Main headline */}
@@ -55,7 +55,7 @@ export default function Hero() {
             alt="Sharper Human Falling Supplements"
             width={800}
             height={1200}
-            className="w-full h-auto max-h-[90vh] object-contain"
+            className="w-full h-auto max-h-[50vh] md:max-h-[90vh] object-contain"
           />
         </div>
       </div>

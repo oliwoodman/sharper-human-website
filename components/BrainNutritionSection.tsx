@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function BrainNutritionSection() {
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Image on LEFT, Content on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-20 items-center">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-center">
           {/* LEFT column - Image */}
           <div className="flex-1 flex items-center justify-center">
             <Image

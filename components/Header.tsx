@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Header() {
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 px-8 md:px-12 py-4"
+      className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 md:px-8 lg:px-12 py-4"
       style={{ backgroundColor: '#ffffff' }}
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">

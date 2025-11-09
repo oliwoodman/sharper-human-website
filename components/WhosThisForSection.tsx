@@ -10,7 +10,7 @@ export default function WhosThisForSection() {
   };
 
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Full width header */}
         <h2
@@ -25,7 +25,7 @@ export default function WhosThisForSection() {
         </h2>
 
         {/* Two column layout - Intro on LEFT, Accordion on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           {/* LEFT column - intro */}
           <div className="flex-[0.45]">
             <p

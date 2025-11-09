@@ -1,20 +1,13 @@
 export default function NaturalBrainSection() {
   return (
-    <section className="relative py-16 md:py-20 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Two column layout - Brain image on left, white box on right */}
-        <div className="flex flex-col md:flex-row items-stretch">
+        <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-0">
           {/* Left column - Brain image with white outline and rounded left corners */}
           <div className="flex-[0.7] flex items-center justify-center">
             <div
-              className="relative w-full h-full overflow-hidden"
-              style={{
-                borderTop: '2px solid #fff',
-                borderBottom: '2px solid #fff',
-                borderLeft: '2px solid #fff',
-                borderTopLeftRadius: '1rem',
-                borderBottomLeftRadius: '1rem'
-              }}
+              className="relative w-full h-full overflow-hidden border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
             >
               <img
                 src="/images/brain visual.png"
@@ -26,11 +19,9 @@ export default function NaturalBrainSection() {
 
           {/* Right column - White box with all content and rounded right corners */}
           <div
-            className="flex-1 p-8 md:p-10 lg:p-12"
+            className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 rounded-2xl md:rounded-l-none"
             style={{
-              backgroundColor: '#fff',
-              borderTopRightRadius: '1rem',
-              borderBottomRightRadius: '1rem'
+              backgroundColor: '#fff'
             }}
           >
             {/* Header */}

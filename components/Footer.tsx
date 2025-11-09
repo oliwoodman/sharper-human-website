@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative py-12 px-8 md:px-12" style={{ backgroundColor: '#010101' }}>
+    <footer className="relative py-12 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center border-t" style={{ borderColor: '#1a1a1a', paddingTop: '3rem' }}>
           <p
