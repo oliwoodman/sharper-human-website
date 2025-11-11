@@ -22,9 +22,9 @@ export default function QualityStandardsSection() {
           {/* LEFT column - Header */}
           <div className="flex-1">
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1]"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1]"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
@@ -38,22 +38,22 @@ export default function QualityStandardsSection() {
             {standards.map((standard, index) => (
               <div key={index}>
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)] mb-4"
+                  className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                   style={{
                     fontWeight: 400,
-                    letterSpacing: '0.02em',
+                    letterSpacing: '0.01em',
                     color: '#fff'
                   }}
                 >
                   {standard.title}
                 </h3>
                 <p
-                  className="text-[clamp(0.95rem,1.8vw,1.05rem)]"
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
                   style={{
-                    color: '#ccc',
-                    fontWeight: 300,
+                    color: '#fff',
+                    fontWeight: 400,
                     letterSpacing: '0.01em',
-                    lineHeight: 1.6
+                    lineHeight: 1.7
                   }}
                 >
                   {standard.description}

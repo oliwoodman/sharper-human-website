@@ -10,9 +10,12 @@ export default function ConsumptionSection() {
           <div className="flex-1 flex items-center justify-center">
             <div
               className="relative w-full h-full overflow-hidden border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
+              style={{
+                backgroundColor: '#000'
+              }}
             >
               <Image
-                src="/images/singular pill.png"
+                src="/images/two pills.png"
                 alt="Sharper Human Pill"
                 width={600}
                 height={600}
@@ -24,11 +27,14 @@ export default function ConsumptionSection() {
           {/* RIGHT column - Header and Content */}
           <div
             className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center border-2 border-white rounded-2xl md:border-l-0 md:rounded-l-none"
+            style={{
+              backgroundColor: '#000'
+            }}
           >
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
@@ -36,12 +42,12 @@ export default function ConsumptionSection() {
               Consumption & Usage
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -51,10 +57,10 @@ export default function ConsumptionSection() {
 
               <div className="pt-4">
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)] mb-4"
+                  className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                   style={{
                     fontWeight: 400,
-                    letterSpacing: '0.02em',
+                    letterSpacing: '0.01em',
                     color: '#fff'
                   }}
                 >
@@ -64,7 +70,7 @@ export default function ConsumptionSection() {
                   className="text-[clamp(1rem,2vw,1.15rem)]"
                   style={{
                     color: '#fff',
-                    fontWeight: 300,
+                    fontWeight: 400,
                     letterSpacing: '0.01em',
                     lineHeight: 1.7
                   }}

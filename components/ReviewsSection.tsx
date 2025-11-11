@@ -27,11 +27,11 @@ export default function ReviewsSection() {
     <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
         {/* Centered Header */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h2
-            className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-4"
+            className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
             style={{
-              fontWeight: 100,
+              fontWeight: 200,
               letterSpacing: '-0.02em',
               color: '#fff'
             }}
@@ -39,10 +39,10 @@ export default function ReviewsSection() {
             Sharper Human Feedback & Reviews From Founders
           </h2>
           <h3
-            className="text-[clamp(1.1rem,2vw,1.3rem)]"
+            className="text-[clamp(1.2rem,2vw,1.4rem)]"
             style={{
-              fontWeight: 200,
-              letterSpacing: '0.05em',
+              fontWeight: 400,
+              letterSpacing: '0.01em',
               color: '#fff',
               fontStyle: 'italic'
             }}
@@ -64,10 +64,10 @@ export default function ReviewsSection() {
 
               {/* Name */}
               <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-2"
+                className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                 style={{
-                  fontWeight: 300,
-                  letterSpacing: '0.02em',
+                  fontWeight: 400,
+                  letterSpacing: '0.01em',
                   color: '#fff'
                 }}
               >
@@ -89,12 +89,12 @@ export default function ReviewsSection() {
 
               {/* Quote */}
               <p
-                className="text-[clamp(0.95rem,1.8vw,1.05rem)]"
+                className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
-                  color: '#ccc',
-                  fontWeight: 300,
+                  color: '#fff',
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
-                  lineHeight: 1.6
+                  lineHeight: 1.7
                 }}
               >
                 &ldquo;{review.quote}&rdquo;

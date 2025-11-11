@@ -9,9 +9,9 @@ export default function CoffeeTwoSection() {
             className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
           >
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
@@ -19,12 +19,12 @@ export default function CoffeeTwoSection() {
               This is Coffee 2.0 - &ldquo;Why No Caffeine?&rdquo;
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
             <p
               className="text-[clamp(1rem,2vw,1.15rem)]"
               style={{
                 color: '#fff',
-                fontWeight: 300,
+                fontWeight: 400,
                 letterSpacing: '0.01em',
                 lineHeight: 1.7
               }}
@@ -36,7 +36,7 @@ export default function CoffeeTwoSection() {
               className="text-[clamp(1rem,2vw,1.15rem)]"
               style={{
                 color: '#fff',
-                fontWeight: 300,
+                fontWeight: 400,
                 letterSpacing: '0.01em',
                 lineHeight: 1.7
               }}
@@ -48,7 +48,7 @@ export default function CoffeeTwoSection() {
               className="text-[clamp(1rem,2vw,1.15rem)]"
               style={{
                 color: '#fff',
-                fontWeight: 300,
+                fontWeight: 400,
                 letterSpacing: '0.01em',
                 lineHeight: 1.7
               }}
@@ -60,15 +60,15 @@ export default function CoffeeTwoSection() {
 
           {/* RIGHT column - Quote card with white background - full height */}
           <div
-            className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center items-center rounded-2xl md:rounded-l-none"
+            className="flex-1 p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center items-center rounded-2xl md:rounded-l-none border-2 border-white md:border-l-0"
             style={{
               backgroundColor: '#f5f5f5'
             }}
           >
             <blockquote
-              className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] text-center"
+              className="text-[clamp(1.6rem,3.5vw,2.5rem)] leading-[1.1] text-right"
               style={{
-                fontWeight: 200,
+                fontWeight: 300,
                 letterSpacing: '-0.01em',
                 color: '#1a1a1a',
                 fontStyle: 'italic'

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="hero relative flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 pt-20 pb-12" style={{ backgroundColor: '#010101' }}>
+    <div className="hero relative flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 pt-20 pb-12" style={{ backgroundColor: '#000' }}>
       {/* Main content - two columns */}
       <div className="flex flex-col md:flex-row items-center justify-start gap-6 sm:gap-8 md:gap-12 lg:gap-16 max-w-[1400px] mx-auto w-full">
         {/* Left column - Text content */}
@@ -11,12 +11,12 @@ export default function Hero() {
           <h1
             className="tagline text-[clamp(2.8rem,7vw,5.5rem)] leading-[0.95] mb-8 animate-fade-in-up-delay-200"
             style={{
-              fontWeight: 100,
+              fontWeight: 200,
               letterSpacing: '-0.04em',
               color: '#fff'
             }}
           >
-            Focus for decades,<br />not minutes.
+            Focus for<br />Founders.
           </h1>
 
           {/* Subheadline */}

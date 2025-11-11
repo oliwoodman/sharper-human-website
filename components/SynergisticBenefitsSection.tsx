@@ -48,9 +48,9 @@ export default function SynergisticBenefitsSection() {
         {/* Centered Header */}
         <div className="text-center mb-12">
           <h2
-            className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-6"
+            className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
             style={{
-              fontWeight: 100,
+              fontWeight: 200,
               letterSpacing: '-0.02em',
               color: '#fff'
             }}
@@ -61,7 +61,7 @@ export default function SynergisticBenefitsSection() {
             className="text-[clamp(1rem,2vw,1.15rem)] max-w-[900px] mx-auto"
             style={{
               color: '#fff',
-              fontWeight: 300,
+              fontWeight: 400,
               letterSpacing: '0.01em',
               lineHeight: 1.7
             }}
@@ -81,10 +81,10 @@ export default function SynergisticBenefitsSection() {
             >
               <div className="flex items-center justify-between mb-1">
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)]"
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
                   style={{
-                    fontWeight: 600,
-                    letterSpacing: '0.05em',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
                     color: '#fff'
                   }}
                 >
@@ -106,7 +106,7 @@ export default function SynergisticBenefitsSection() {
                   className="text-[clamp(1rem,2vw,1.15rem)] animate-fade-in-up mt-4"
                   style={{
                     color: '#fff',
-                    fontWeight: 300,
+                    fontWeight: 400,
                     letterSpacing: '0.01em',
                     lineHeight: 1.7
                   }}

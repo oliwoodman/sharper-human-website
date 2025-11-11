@@ -67,10 +67,24 @@ export default function FAQSection() {
   return (
     <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Two column layout - Half FAQs on LEFT, Title + Half FAQs on RIGHT */}
+        {/* Centered Header */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2
+            className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1]"
+            style={{
+              fontWeight: 200,
+              letterSpacing: '-0.02em',
+              color: '#fff'
+            }}
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        {/* Two column layout - Half FAQs on LEFT, Half FAQs on RIGHT */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           {/* LEFT column - First half of FAQs */}
-          <div className="flex-1 space-y-4 md:mt-[calc(clamp(2rem,5vw,3.5rem)*1.1+2rem)]">
+          <div className="flex-1 space-y-4">
             {leftFaqs.map((faq, index) => (
               <div
                 key={index}
@@ -83,7 +97,7 @@ export default function FAQSection() {
                   style={{ outline: 'none' }}
                 >
                   <h3
-                    className="text-[clamp(1rem,2vw,1.2rem)] pr-4"
+                    className="text-[clamp(1rem,2vw,1.15rem)] pr-4"
                     style={{
                       fontWeight: 400,
                       letterSpacing: '0.01em',
@@ -107,12 +121,12 @@ export default function FAQSection() {
                 {openIndex === index && (
                   <div className="pb-6">
                     <p
-                      className="text-[clamp(0.95rem,1.8vw,1.05rem)] animate-fade-in-up"
+                      className="text-[clamp(1rem,2vw,1.15rem)] animate-fade-in-up"
                       style={{
                         color: '#fff',
-                        fontWeight: 300,
+                        fontWeight: 400,
                         letterSpacing: '0.01em',
-                        lineHeight: 1.6
+                        lineHeight: 1.7
                       }}
                     >
                       {faq.answer}
@@ -123,20 +137,8 @@ export default function FAQSection() {
             ))}
           </div>
 
-          {/* RIGHT column - Header + Second half of FAQs */}
-          <div className="flex-1">
-            <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
-              style={{
-                fontWeight: 100,
-                letterSpacing: '-0.02em',
-                color: '#fff'
-              }}
-            >
-              Frequently Asked Questions
-            </h2>
-
-            <div className="space-y-4">
+          {/* RIGHT column - Second half of FAQs */}
+          <div className="flex-1 space-y-4">
               {rightFaqs.map((faq, index) => {
                 const actualIndex = midPoint + index;
                 return (
@@ -151,7 +153,7 @@ export default function FAQSection() {
                       style={{ outline: 'none' }}
                     >
                       <h3
-                        className="text-[clamp(1rem,2vw,1.2rem)] pr-4"
+                        className="text-[clamp(1rem,2vw,1.15rem)] pr-4"
                         style={{
                           fontWeight: 400,
                           letterSpacing: '0.01em',
@@ -175,12 +177,12 @@ export default function FAQSection() {
                     {openIndex === actualIndex && (
                       <div className="pb-6">
                         <p
-                          className="text-[clamp(0.95rem,1.8vw,1.05rem)] animate-fade-in-up"
+                          className="text-[clamp(1rem,2vw,1.15rem)] animate-fade-in-up"
                           style={{
                             color: '#fff',
-                            fontWeight: 300,
+                            fontWeight: 400,
                             letterSpacing: '0.01em',
-                            lineHeight: 1.6
+                            lineHeight: 1.7
                           }}
                         >
                           {faq.answer}
@@ -190,7 +192,6 @@ export default function FAQSection() {
                   </div>
                 );
               })}
-            </div>
           </div>
         </div>
       </div>

@@ -226,24 +226,10 @@ export default function IngredientsSection() {
   return (
     <section className="relative py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12" style={{ backgroundColor: '#010101' }}>
       <div className="max-w-[1400px] mx-auto">
-        {/* Header - centered */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2
-            className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1]"
-            style={{
-              fontWeight: 100,
-              letterSpacing: '-0.02em',
-              color: '#fff'
-            }}
-          >
-            20 Research-Backed, Focus Enhancing Ingredients
-          </h2>
-        </div>
-
         {/* Two column layout - Carousels on LEFT, Text on RIGHT */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           {/* LEFT column - Two stacked auto-scrolling carousels */}
-          <div className="w-full md:w-[55%] relative mx-auto">
+          <div className="w-full md:w-[55%] relative mx-auto md:mt-[4.5rem]">
             <div className="space-y-6">
               {/* Top carousel - scrolls right */}
               <div
@@ -291,14 +277,26 @@ export default function IngredientsSection() {
           </div>
 
           {/* RIGHT column - Text content stacked */}
-          <div className="flex-1 flex flex-col justify-center space-y-6 md:space-y-8 md:-mt-[5.5rem]">
+          <div className="flex-1 flex flex-col justify-start space-y-6 md:space-y-8">
+            {/* Header */}
+            <h2
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-2"
+              style={{
+                fontWeight: 200,
+                letterSpacing: '-0.02em',
+                color: '#fff'
+              }}
+            >
+              20 Research-Backed, Focus Enhancing Ingredients
+            </h2>
+
             {/* What Makes Our Stack Different */}
             <div>
               <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
+                className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                 style={{
-                  fontWeight: 600,
-                  letterSpacing: '0.05em',
+                  fontWeight: 400,
+                  letterSpacing: '0.01em',
                   color: '#fff'
                 }}
               >
@@ -308,7 +306,7 @@ export default function IngredientsSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -320,20 +318,20 @@ export default function IngredientsSection() {
             {/* Our Premium Ingredient Stack */}
             <div>
               <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
+                className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                 style={{
-                  fontWeight: 600,
-                  letterSpacing: '0.05em',
+                  fontWeight: 400,
+                  letterSpacing: '0.01em',
                   color: '#fff'
                 }}
               >
-                Our Premium Ingredient Stack:
+                Our Premium Ingredient Stack
               </h3>
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}

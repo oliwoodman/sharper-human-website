@@ -14,9 +14,9 @@ export default function WhosThisForSection() {
       <div className="max-w-[1400px] mx-auto">
         {/* Full width header */}
         <h2
-          className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-12 text-center"
+          className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8 text-center"
           style={{
-            fontWeight: 100,
+            fontWeight: 200,
             letterSpacing: '-0.02em',
             color: '#fff'
           }}
@@ -24,38 +24,39 @@ export default function WhosThisForSection() {
           Who&apos;s This For? - &ldquo;Brain Performance & Longevity&rdquo;<br />Focus for Decades not Minutes
         </h2>
 
-        {/* Two column layout - Intro on LEFT, Accordion on RIGHT */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
-          {/* LEFT column - intro */}
-          <div className="flex-[0.45]">
-            <p
-              className="text-[clamp(1rem,2vw,1.15rem)]"
-              style={{
-                color: '#fff',
-                fontWeight: 300,
-                letterSpacing: '0.01em',
-                lineHeight: 1.7
-              }}
-            >
-              When your brain is healthy and functioning optimally, you naturally find it easier to make higher quality decisions for longer periods. Sharper Human is a leading all-natural brain enhancement supplement developed specifically for founders, entrepreneurs and business owners to enhance focus and boost brain longevity.
-            </p>
-          </div>
+        {/* Full width intro paragraph */}
+        <p
+          className="text-[clamp(1rem,2vw,1.15rem)] text-center max-w-[1000px] mx-auto mb-16"
+          style={{
+            color: '#fff',
+            fontWeight: 400,
+            letterSpacing: '0.01em',
+            lineHeight: 1.8
+          }}
+        >
+          When your brain is healthy and functioning optimally, you naturally find it easier to make higher quality decisions for longer periods. Sharper Human is a leading all-natural brain enhancement supplement developed specifically for founders, entrepreneurs and business owners to enhance focus and boost brain longevity.
+        </p>
 
-          {/* RIGHT column - Accordion */}
-          <div className="flex-[0.55] space-y-4 flex flex-col justify-center">
+        {/* Two column layout - Accordion buttons on LEFT, Content on RIGHT */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
+          {/* LEFT column - Accordion buttons only */}
+          <div className="flex-[0.4] space-y-4">
             {/* Accordion Item 1: The Personal Story */}
             <div
-              className="border-b border-[#333] pb-4"
-              style={{ cursor: 'pointer' }}
+              className="pb-4 cursor-pointer transition-all duration-200 hover:opacity-70"
+              style={{
+                borderBottom: openSection === 'personal-story' ? '2px solid #fff' : '1px solid #333'
+              }}
               onClick={() => toggleSection('personal-story')}
             >
-              <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center justify-between">
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)]"
+                  className="text-[clamp(1.2rem,2vw,1.4rem)] transition-opacity duration-200"
                   style={{
-                    fontWeight: 600,
-                    letterSpacing: '0.05em',
-                    color: '#fff'
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    color: '#fff',
+                    opacity: openSection === 'personal-story' ? 1 : 0.6
                   }}
                 >
                   The Personal Story
@@ -65,40 +66,31 @@ export default function WhosThisForSection() {
                   style={{
                     color: '#fff',
                     transform: openSection === 'personal-story' ? 'rotate(45deg)' : 'rotate(0deg)',
-                    display: 'inline-block'
+                    display: 'inline-block',
+                    opacity: openSection === 'personal-story' ? 1 : 0.6
                   }}
                 >
                   +
                 </span>
               </div>
-              {openSection === 'personal-story' && (
-                <p
-                  className="text-[clamp(1rem,2vw,1.15rem)] animate-fade-in-up"
-                  style={{
-                    color: '#fff',
-                    fontWeight: 300,
-                    letterSpacing: '0.01em',
-                    lineHeight: 1.7
-                  }}
-                >
-                  &ldquo;I built this product for myself and my dad. I&apos;ve been an entrepreneur for 15 years and demand peak performance and focus. But for my dad, I wanted something that would give him a healthier brain for longer, improve his memory, and help offset the cognitive decline that was starting to appear. That&apos;s why Sharper Human has focused on both immediate performance AND longevity from day one - to stay sharp and keep the ones you love sharp around you too.&rdquo;
-                </p>
-              )}
             </div>
 
             {/* Accordion Item 2: Our Mission */}
             <div
-              className="border-b border-[#333] pb-4"
-              style={{ cursor: 'pointer' }}
+              className="pb-4 cursor-pointer transition-all duration-200 hover:opacity-70"
+              style={{
+                borderBottom: openSection === 'mission' ? '2px solid #fff' : '1px solid #333'
+              }}
               onClick={() => toggleSection('mission')}
             >
-              <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center justify-between">
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)]"
+                  className="text-[clamp(1.2rem,2vw,1.4rem)] transition-opacity duration-200"
                   style={{
-                    fontWeight: 600,
-                    letterSpacing: '0.05em',
-                    color: '#fff'
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    color: '#fff',
+                    opacity: openSection === 'mission' ? 1 : 0.6
                   }}
                 >
                   Our Mission
@@ -108,53 +100,31 @@ export default function WhosThisForSection() {
                   style={{
                     color: '#fff',
                     transform: openSection === 'mission' ? 'rotate(45deg)' : 'rotate(0deg)',
-                    display: 'inline-block'
+                    display: 'inline-block',
+                    opacity: openSection === 'mission' ? 1 : 0.6
                   }}
                 >
                   +
                 </span>
               </div>
-              {openSection === 'mission' && (
-                <div className="space-y-6 animate-fade-in-up">
-                  <p
-                    className="text-[clamp(1rem,2vw,1.15rem)]"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    As a result, 5% of profits go to brain health related charities supporting Alzheimer&apos;s, Parkinson&apos;s, and brain health research.
-                  </p>
-                  <p
-                    className="text-[clamp(1rem,2vw,1.15rem)]"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    If your brain works optimally and you feel sharper, making better decisions throughout the day becomes effortless - whether that&apos;s choosing the right business strategy or maintaining the discipline to hit the gym. These benefits stack up exponentially, accelerating your progress as a human.
-                  </p>
-                </div>
-              )}
             </div>
 
             {/* Accordion Item 3: Who This Is For */}
             <div
-              className="border-b border-[#333] pb-4"
-              style={{ cursor: 'pointer' }}
+              className="pb-4 cursor-pointer transition-all duration-200 hover:opacity-70"
+              style={{
+                borderBottom: openSection === 'who-for' ? '2px solid #fff' : '1px solid #333'
+              }}
               onClick={() => toggleSection('who-for')}
             >
-              <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center justify-between">
                 <h3
-                  className="text-[clamp(1.1rem,2vw,1.3rem)]"
+                  className="text-[clamp(1.2rem,2vw,1.4rem)] transition-opacity duration-200"
                   style={{
-                    fontWeight: 600,
-                    letterSpacing: '0.05em',
-                    color: '#fff'
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    color: '#fff',
+                    opacity: openSection === 'who-for' ? 1 : 0.6
                   }}
                 >
                   Who This Is For
@@ -164,65 +134,109 @@ export default function WhosThisForSection() {
                   style={{
                     color: '#fff',
                     transform: openSection === 'who-for' ? 'rotate(45deg)' : 'rotate(0deg)',
-                    display: 'inline-block'
+                    display: 'inline-block',
+                    opacity: openSection === 'who-for' ? 1 : 0.6
                   }}
                 >
                   +
                 </span>
               </div>
-              {openSection === 'who-for' && (
-                <ul className="space-y-4 animate-fade-in-up">
-                  <li
-                    className="text-[clamp(1rem,2vw,1.15rem)] flex gap-4"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    <span style={{ color: '#666', flexShrink: 0 }}>•</span>
-                    <span><span style={{ fontWeight: 600 }}>Entrepreneurs + Founders</span> seeking sustainable cognitive enhancement without the dips of caffeine or nicotine.</span>
-                  </li>
-                  <li
-                    className="text-[clamp(1rem,2vw,1.15rem)] flex gap-4"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    <span style={{ color: '#666', flexShrink: 0 }}>•</span>
-                    <span><span style={{ fontWeight: 600 }}>Business leaders</span> who think in terms of decades, not quarters.</span>
-                  </li>
-                  <li
-                    className="text-[clamp(1rem,2vw,1.15rem)] flex gap-4"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    <span style={{ color: '#666', flexShrink: 0 }}>•</span>
-                    <span><span style={{ fontWeight: 600 }}> High performers</span> who refuse to accept mental fatigue as normal.</span>
-                  </li>
-                  <li
-                    className="text-[clamp(1rem,2vw,1.15rem)] flex gap-4"
-                    style={{
-                      color: '#fff',
-                      fontWeight: 300,
-                      letterSpacing: '0.01em',
-                      lineHeight: 1.7
-                    }}
-                  >
-                    <span style={{ color: '#666', flexShrink: 0 }}>•</span>
-                    <span>Anyone who wants to become sharper in their profession, <span style={{ fontWeight: 600 }}>sharper trader, sharper leader, sharper father, sharper human.</span></span>
-                  </li>
-                </ul>
-              )}
             </div>
+          </div>
+
+          {/* RIGHT column - Content display area */}
+          <div className="flex-[0.6] flex items-start">
+            {openSection === 'personal-story' && (
+              <div className="animate-fade-in-up w-full">
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  &ldquo;I built this product for myself and my dad. I&apos;ve been an entrepreneur for 15 years and demand peak performance and focus. But for my dad, I wanted something that would give him a healthier brain for longer, improve his memory, and help offset the cognitive decline that was starting to appear. That&apos;s why Sharper Human has focused on both immediate performance AND longevity from day one - to stay sharp and keep the ones you love sharp around you too.&rdquo;
+                </p>
+              </div>
+            )}
+
+            {openSection === 'mission' && (
+              <div className="space-y-5 animate-fade-in-up w-full">
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  As a result, 5% of profits go to brain health related charities supporting Alzheimer&apos;s, Parkinson&apos;s, and brain health research.
+                </p>
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  If your brain works optimally and you feel sharper, making better decisions throughout the day becomes effortless - whether that&apos;s choosing the right business strategy or maintaining the discipline to hit the gym. These benefits stack up exponentially, accelerating your progress as a human.
+                </p>
+              </div>
+            )}
+
+            {openSection === 'who-for' && (
+              <div className="space-y-5 animate-fade-in-up w-full">
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>Entrepreneurs + Founders</span> seeking sustainable cognitive enhancement without the dips of caffeine or nicotine.
+                </p>
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>Business leaders</span> who think in terms of decades, not quarters.
+                </p>
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>High performers</span> who refuse to accept mental fatigue as normal.
+                </p>
+                <p
+                  className="text-[clamp(1rem,2vw,1.15rem)]"
+                  style={{
+                    color: '#fff',
+                    fontWeight: 400,
+                    letterSpacing: '0.01em',
+                    lineHeight: 1.7
+                  }}
+                >
+                  Anyone who wants to become sharper in their profession, <span style={{ fontWeight: 600 }}>sharper trader, sharper leader, sharper father, sharper human.</span>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

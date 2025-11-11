@@ -20,22 +20,22 @@ export default function BrainNutritionSection() {
           {/* RIGHT column - Header and Content */}
           <div className="flex-1">
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
             >
-              Brain Nutrition - Why Your Brain Deserves Better
+              Brain Nutrition - &ldquo;A Sharper Human, for Longer&rdquo;
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -47,7 +47,7 @@ export default function BrainNutritionSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -59,7 +59,7 @@ export default function BrainNutritionSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -71,7 +71,7 @@ export default function BrainNutritionSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}

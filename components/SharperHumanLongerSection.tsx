@@ -20,9 +20,9 @@ export default function SharperHumanLongerSection() {
           {/* RIGHT column - Header and Content */}
           <div className="flex-1">
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-6"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
@@ -34,7 +34,7 @@ export default function SharperHumanLongerSection() {
               className="text-[clamp(1.1rem,2vw,1.3rem)] mb-8"
               style={{
                 color: '#fff',
-                fontWeight: 200,
+                fontWeight: 300,
                 letterSpacing: '0.01em',
                 lineHeight: 1.4,
                 fontStyle: 'italic'
@@ -43,12 +43,12 @@ export default function SharperHumanLongerSection() {
               The Best Version Of Yourself, For as Long As Possible.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -60,7 +60,7 @@ export default function SharperHumanLongerSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -71,12 +71,13 @@ export default function SharperHumanLongerSection() {
               {/* Core Philosophy Callout */}
               <div className="mt-10 pt-6 pb-6 border-t border-b border-[#333]">
                 <p
-                  className="text-[clamp(1.1rem,2.2vw,1.4rem)]"
+                  className="text-[clamp(1.1rem,2vw,1.3rem)]"
                   style={{
                     color: '#fff',
-                    fontWeight: 400,
+                    fontWeight: 300,
                     letterSpacing: '0.01em',
-                    lineHeight: 1.5
+                    lineHeight: 1.4,
+                    fontStyle: 'italic'
                   }}
                 >
                   <span style={{ fontWeight: 600 }}>Core Philosophy:</span> Make your brain - and hence YOU - better. Everything flows from enhanced cognitive capacity.

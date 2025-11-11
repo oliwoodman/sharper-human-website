@@ -9,9 +9,9 @@ export default function DosageSection() {
           {/* LEFT column - All text content */}
           <div className="flex-1 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
             <h2
-              className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] mb-8"
+              className="text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.1] mb-8"
               style={{
-                fontWeight: 100,
+                fontWeight: 200,
                 letterSpacing: '-0.02em',
                 color: '#fff'
               }}
@@ -19,12 +19,12 @@ export default function DosageSection() {
               Dosage Matters - What Most Get Wrong
             </h2>
 
-            <div className="space-y-6 mb-10">
+            <div className="space-y-5 mb-8">
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -35,7 +35,7 @@ export default function DosageSection() {
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -45,22 +45,22 @@ export default function DosageSection() {
             </div>
 
             {/* The Industry Problem */}
-            <div className="mb-10">
+            <div className="mb-8">
               <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
+                className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                 style={{
-                  fontWeight: 600,
-                  letterSpacing: '0.05em',
+                  fontWeight: 400,
+                  letterSpacing: '0.01em',
                   color: '#fff'
                 }}
               >
-                The Industry Problem:
+                The Industry Problem
               </h3>
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
@@ -72,20 +72,20 @@ export default function DosageSection() {
             {/* Our Solution */}
             <div>
               <h3
-                className="text-[clamp(1.1rem,2vw,1.3rem)] mb-6"
+                className="text-[clamp(1.2rem,2vw,1.4rem)] mb-3"
                 style={{
-                  fontWeight: 600,
-                  letterSpacing: '0.05em',
+                  fontWeight: 400,
+                  letterSpacing: '0.01em',
                   color: '#fff'
                 }}
               >
-                Our Solution:
+                Our Solution
               </h3>
               <p
                 className="text-[clamp(1rem,2vw,1.15rem)]"
                 style={{
                   color: '#fff',
-                  fontWeight: 300,
+                  fontWeight: 400,
                   letterSpacing: '0.01em',
                   lineHeight: 1.7
                 }}
