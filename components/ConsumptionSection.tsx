@@ -9,9 +9,10 @@ export default function ConsumptionSection() {
           {/* LEFT column - Image with border around image edge */}
           <div className="flex-1 flex items-center justify-center">
             <div
-              className="relative w-full h-full overflow-hidden border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
+              className="relative w-full overflow-hidden border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
               style={{
-                backgroundColor: '#000'
+                backgroundColor: '#000',
+                aspectRatio: '1.5 / 1'
               }}
             >
               <Image
@@ -19,7 +20,10 @@ export default function ConsumptionSection() {
                 alt="Sharper Human Pill"
                 width={300}
                 height={300}
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
+                style={{
+                  objectPosition: 'center'
+                }}
               />
             </div>
           </div>
