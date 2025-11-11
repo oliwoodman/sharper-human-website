@@ -64,7 +64,7 @@ export default function ConsumptionSection() {
                     color: '#fff'
                   }}
                 >
-                  Timing Tip:
+                  Timing Tip
                 </h3>
                 <p
                   className="text-[clamp(1rem,2vw,1.15rem)]"
