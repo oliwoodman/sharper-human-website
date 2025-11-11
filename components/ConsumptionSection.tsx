@@ -12,7 +12,7 @@ export default function ConsumptionSection() {
               className="relative w-full overflow-hidden border-2 border-white rounded-2xl md:border-r-0 md:rounded-r-none"
               style={{
                 backgroundColor: '#000',
-                aspectRatio: '1.5 / 1'
+                aspectRatio: '1.2 / 1'
               }}
             >
               <Image
