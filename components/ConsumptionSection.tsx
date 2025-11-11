@@ -17,7 +17,7 @@ export default function ConsumptionSection() {
               <Image
                 src="/images/two pills.png"
                 alt="Sharper Human Pill"
-                width={600}
+                width={400}
                 height={600}
                 className="w-full h-auto object-contain"
               />
